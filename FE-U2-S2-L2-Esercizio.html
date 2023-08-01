@@ -128,10 +128,10 @@ EXTRAS
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Saldi</a>
+              <a class="nav-link" href="collapseSaldi">Saldi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Welcome Summer</a>
+              <a class="nav-link" href="collapseWelcome">Welcome Summer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Last Minute</a>
@@ -156,8 +156,20 @@ EXTRAS
       <button type="button" class="btn btn-info">Prenota ora</button>
     </div>
     <div class="container p-5 mt-5">
-      <h2>Saldi</h2>
-      <div class="row justify-content-around">
+      <div class="row mb-3">
+        <h2 class="col-2">Saldi</h2>
+        <button
+          class="btn btn-sm btn-primary col-2 offset-8"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseSaldi"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Nascondi sezione
+        </button>
+      </div>
+      <div class="row justify-content-around" id="collapseSaldi">
         <div class="card col-6 col-md-4 col-xl-3 mb-4 border border-2 border-info">
           <img
             src="https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
@@ -169,7 +181,7 @@ EXTRAS
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-info">Go somewhere</a>
+            <a href="#" class="btn btn-info">Prenota</a>
           </div>
         </div>
         <div class="card col-6 col-md-4 col-xl-3 mb-4 border border-2 border-info">
@@ -183,7 +195,7 @@ EXTRAS
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-info">Go somewhere</a>
+            <a href="#" class="btn btn-info">Prenota</a>
           </div>
         </div>
         <div class="card col-6 col-md-4 col-xl-3 mb-4 border border-2 border-info">
@@ -197,7 +209,7 @@ EXTRAS
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-info">Go somewhere</a>
+            <a href="#" class="btn btn-info">Prenota</a>
           </div>
         </div>
         <div class="card d-md-none d-xl-block col-6 col-xl-3 mb-4 border border-2 border-info">
@@ -211,14 +223,26 @@ EXTRAS
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-info">Go somewhere</a>
+            <a href="#" class="btn btn-info">Prenota</a>
           </div>
         </div>
       </div>
     </div>
     <div class="container p-5 mt-5">
-      <h2>Welcome summer</h2>
-      <div class="row justify-content-around">
+      <div class="row mb-3">
+        <h2 class="col-3">Welcome summer</h2>
+        <button
+          class="btn btn-sm btn-primary col-2 offset-7"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseWelcome"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Nascondi sezione
+        </button>
+      </div>
+      <div class="row justify-content-around" id="collapseWelcome">
         <div class="card col-6 col-lg-4 col-xl-2 mb-4 shadow-lg">
           <img
             src="https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
